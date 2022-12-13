@@ -1,0 +1,229 @@
+.main_footer {
+  width: 100%;
+  padding-top: 100px;
+  height: 600px;
+  background-color: #00042c;
+  display: grid;
+  color: white;
+  grid-template-columns: 300px repeat(4, 1fr) 300px;
+  position: relative;
+}
+
+.main_footer > div {
+  padding: 0px 12px;
+}
+.footer_intro {
+  grid-column: 2/3;
+  font-size: 15px;
+  line-height: 27px;
+  color: #d9d6d6;
+}
+
+.footerlogo_box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.footerlogo_box > img {
+  height: 35px;
+  border-radius: 20px;
+}
+.footerlogo_box > span {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+.footer_social_media_box {
+  border: 1px soldi white;
+  display: flex;
+  gap: 10px;
+  padding: 20px 0px;
+}
+
+.fb_icon {
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+  background-color: #3955bc;
+}
+
+.linkedin_icon {
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  background-color: #1da1f2;
+}
+
+.fb_icon:hover,
+.linkedin_icon:hover {
+  animation-name: rubber_band;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+
+.footer_services_box,
+.footer_links_box,
+.footer_information_box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer_services_box > div,
+.footer_links_box > div,
+.footer_information_box > div {
+  font-size: 25px;
+  font-weight: 700;
+  height: 42px;
+  border-bottom: 2px solid #060c4a;
+}
+
+.footer_services_box > ul,
+.footer_links_box > ul,
+.footer_information_box > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+  color: #d9d6d6;
+}
+.footer_services_box > ul > li,
+.footer_links_box > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  line-height: 27px;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.footer_services_box > ul > li:hover,
+.footer_links_box > ul > li:hover {
+  color: #1dd3f8;
+  transform: translateX(10px);
+}
+
+.information_list_items {
+  display: grid;
+  grid-template-areas:
+    "img title "
+    "img address  ";
+  grid-template-columns: 30px 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.information_list_items > div {
+  width: 30px;
+  font-size: 25px;
+}
+.information_list_items > h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.information_list_items > p {
+  font-size: 15px;
+  color: #d9d6d6;
+  line-height: 27px;
+}
+
+.lower_footer {
+  width: 100%;
+  height: 67px;
+  background-color: #0d1240;
+  display: grid;
+  grid-template-columns: 300px repeat(3, 1fr) 300px;
+  align-items: center;
+}
+.lower_footer > div:first-child {
+  grid-column: 2/3;
+  text-align: left;
+}
+.lower_footer > div {
+  font-size: 15px;
+  color: #d9d6d6;
+  text-align: center;
+}
+
+.lower_footer > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 6px;
+}
+
+.lower_footer > div > span {
+  color: #1dd3f8;
+}
+
+.footer_heart {
+  color: #1dd3f8;
+  font-size: 15px;
+  animation-name: heart_beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transition: all ease-in-out;
+  z-index: 99999;
+}
+
+.footer_bgi {
+  position: absolute;
+  right: 200px;
+  top: 200px;
+  opacity: 0.6;
+}
+
+.shape_two {
+  animation-name: opacityLtoH;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.shape_one {
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 0ms;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes heart_beat {
+  0% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1, 1);
+  }
+  40% {
+    transform: scale(1.3, 1.3);
+  }
+  60% {
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    transform: scale(1.3, 1.3);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

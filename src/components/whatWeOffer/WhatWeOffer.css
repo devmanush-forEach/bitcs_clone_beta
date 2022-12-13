@@ -1,0 +1,132 @@
+.wwo_main_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.wwo_main_box > p {
+  color: #1dd3f8;
+  font-size: 14px;
+}
+.wwo_main_box > h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.wwo_main_box > h3 {
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.wwo_card_container {
+  width: 70%;
+  height: 560px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 40px 0px;
+}
+
+.wwo_right_cards_box,
+.wwo_left_cards_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.wwo_right_cards_box {
+  grid-column: 3/4;
+}
+.wwo_card {
+  flex-basis: 21%;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  background-color: white;
+  padding: 30px 0px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+}
+
+.offer_middle_box {
+  display: grid;
+  place-items: center;
+}
+
+.left_cards {
+  border-bottom-left-radius: 80px;
+  border-top-left-radius: 80px;
+}
+
+.wwo_card::after {
+  content: "";
+  background-color: #1dd3f8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateX(-105%);
+  transition: all 0.4s ease-in;
+}
+
+.right_cards::after {
+  border-bottom-right-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+.wwo_card:hover .wwo_card_icon {
+  color: white;
+  transform: rotate(360deg);
+}
+
+.wwo_card:hover::after {
+  transform: translateX(0%);
+}
+
+.wwo_card:hover .wwo_card_text,
+.wwo_card:hover .wwo_card_title {
+  color: white;
+}
+
+.right_cards {
+  border-bottom-right-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+.wwo_card_icon {
+  grid-row: 1/3;
+  display: grid;
+  place-items: center;
+  font-size: 50px;
+  color: #1dd3f8;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+.wwo_card_title {
+  font-size: 22px;
+  font-weight: 500;
+  z-index: 99999;
+  transition: all 0.5s ease;
+}
+
+.wwo_card_text {
+  font-size: 15px;
+  z-index: 99999;
+  font-weight: 400;
+  transition: all 0.5s ease;
+}
+
+.wwo_companies_box {
+  padding: 40px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: space-between;
+}
+
+.wwo_companies_box > img {
+  width: 15%;
+}

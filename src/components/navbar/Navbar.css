@@ -1,0 +1,115 @@
+.header {
+  width: 100%;
+  height: 95px;
+  background: transparent;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 3.5fr 1fr;
+  position: fixed;
+  top: 0%;
+  transition: all 1s ease;
+  z-index: 999;
+}
+.header_logo_box {
+  grid-column: 2/3;
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.header_logo_box > img {
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+}
+.header_logo_box > span {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav_links_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: white;
+  gap: 20px;
+  height: 100%;
+}
+.nav_links_list > li {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.nav_links {
+  color: white;
+  text-decoration: none;
+}
+
+.nav_links_list > li:nth-child(4) {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.nav_links_list > li:hover .nav_links,
+.nav_links_list > li:hover {
+  color: #1dd3f8;
+  cursor: pointer;
+}
+.more_dropdown_box {
+  width: 250px;
+  height: 180px;
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  display: none;
+}
+.more_dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  background-color: white;
+  width: 250px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0%;
+  gap: 10px;
+  padding: 18px 10px;
+  transition: all 0.5s ease;
+  opacity: 0.4;
+  /* display: none; */
+}
+
+.more_nav:hover .more_dropdown_box {
+  display: block;
+}
+
+.more_dropdown_box:hover .more_dropdown {
+  transform: translateY(-40px);
+  opacity: 1;
+}
+
+.more_dropdown > li {
+  width: 100%;
+  color: black;
+  padding: 5px 15px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.drop_nav_links {
+  color: black;
+  text-decoration: none;
+}
+
+.more_dropdown > li:hover .drop_nav_links {
+  color: #20c997;
+}
