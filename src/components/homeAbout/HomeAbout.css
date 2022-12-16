@@ -50,7 +50,7 @@
 }
 
 .about_card_img_div {
-  border: 1px dashed #1dd3f8;
+  border: 2px dotted #1dd3f8;
   border-radius: 30px;
   width: 60px;
   height: 60px;
@@ -60,6 +60,7 @@
   font-weight: 100;
   color: #1dd3f8;
   transition: all 0.8s ease;
+  animation: border_rotation 7s linear infinite alternate;
 }
 .home_about_card > h2 {
   font-size: 22px;
@@ -152,4 +153,29 @@
 
 .home_about_list_box + div {
   margin-top: 20px;
+}
+
+@keyframes border_rotation {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
 }

@@ -1,13 +1,3 @@
-import a from "../../assets/offer/1.png";
-import b from "../../assets/offer/2.png";
-import c from "../../assets/offer/3.png";
-import d from "../../assets/offer/4.png";
-import e from "../../assets/offer/5.png";
-import f from "../../assets/offer/6.png";
-import g from "../../assets/offer/7.png";
-import h from "../../assets/offer/8.png";
-import i from "../../assets/offer/9.png";
-import j from "../../assets/offer/10.png";
 import { SiMusicbrainz } from "react-icons/si";
 
 const card = function (img, title, kind) {
@@ -56,7 +46,28 @@ const wwoData = {
       "All kind of industry"
     ),
   ],
-  companies: [a, b, c, d, e, f, g, h, i, j],
+  service_page: [
+    new card(
+      <SiMusicbrainz />,
+      "Fintech Software Development",
+      "All kind of industry"
+    ),
+    new card(
+      <SiMusicbrainz />,
+      "Custom Healthcare Software Development",
+      "All kind of industry"
+    ),
+    new card(
+      <SiMusicbrainz />,
+      "EdTech App Development",
+      "All kind of industry"
+    ),
+    new card(
+      <SiMusicbrainz />,
+      "Startup Product Development Company",
+      "All kind of industry"
+    ),
+  ],
 };
 
 export default wwoData;

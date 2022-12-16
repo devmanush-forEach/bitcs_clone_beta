@@ -10,6 +10,7 @@ import "./Home.css";
 import HomeBusiness from "../../components/homeBusiness/HomeBusiness";
 import Slider from "../../components/slider/Slider";
 import WhatWeOffer from "../../components/whatWeOffer/WhatWeOffer";
+import Companies from "../../components/companies/Companies";
 
 const Home = () => {
   return (
@@ -41,6 +42,7 @@ const Home = () => {
       <HomeBusiness isHome={true} />
       <Slider isHome={true} />
       <WhatWeOffer isHome={true} />
+      <Companies />
     </>
   );
 };

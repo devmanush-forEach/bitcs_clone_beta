@@ -1,0 +1,16 @@
+.testimonial_container {
+  background-color: whitesmoke;
+}
+
+.users_card_box {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 150px 0px;
+}
+
+.testimonial_card {
+  width: 32%;
+}

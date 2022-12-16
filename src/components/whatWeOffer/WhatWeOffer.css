@@ -117,16 +117,52 @@
   transition: all 0.5s ease;
 }
 
-.wwo_companies_box {
-  padding: 40px;
+.service_page_wwo {
   width: 70%;
-  margin: auto;
+  height: 623px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 5%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.service_wwo_left {
+  min-width: 25%;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.wwo_companies_box > img {
-  width: 15%;
+.service_wwo_card {
+  flex-basis: 23%;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  background-color: #1dd3f8;
+  padding: 30px 0px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  color: white;
+}
+
+.service-cards {
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  width: 100%;
+}
+
+.service_wwo_card > div {
+  color: white;
+}
+
+.service_cards {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.service_wwo_right {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }

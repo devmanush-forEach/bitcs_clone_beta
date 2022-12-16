@@ -79,6 +79,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
 }
 .footer_services_box > div,
 .footer_links_box > div,
@@ -87,6 +88,17 @@
   font-weight: 700;
   height: 42px;
   border-bottom: 2px solid #060c4a;
+}
+.footer_services_box > div::after,
+.footer_links_box > div::after,
+.footer_information_box > div::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  border-top: 2px solid white;
+  top: 42px;
+  left: 0%;
 }
 
 .footer_services_box > ul,
@@ -192,18 +204,16 @@
 }
 
 .shape_one {
-  animation-name: rotate;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-delay: 0ms;
+  animation: rotate 20s linear infinite;
 }
 
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
   }
 }
 

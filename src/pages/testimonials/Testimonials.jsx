@@ -1,5 +1,8 @@
 import React from "react";
 import ExtendNav from "../../common/extendNav/ExtendNav";
+import TestimonialsData from "./TestimonialsData";
+import SliderCard from "../../components/slider/SliderCard";
+import "./Testimonials.css";
 
 const head = "Testimonials";
 const desc =
@@ -7,8 +10,15 @@ const desc =
 
 const Testimonials = () => {
   return (
-    <div>
+    <div className="testimonial_container">
       <ExtendNav desc={desc} head={head} />
+      <div className="users_card_box">
+        {TestimonialsData.map((card) => (
+          <div className="testimonial_card">
+            <SliderCard card={card} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

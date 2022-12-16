@@ -1,0 +1,13 @@
+.wwo_companies_box {
+  padding: 40px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: space-between;
+}
+
+.wwo_companies_box > img {
+  width: 15%;
+}
