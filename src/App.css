@@ -5,6 +5,11 @@
   font-family: sans-serif;
 }
 
+body{
+  max-width: 1920px;
+  margin: auto;
+}
+
 button {
   cursor: pointer;
 }

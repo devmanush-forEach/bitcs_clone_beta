@@ -93,7 +93,9 @@
 .footer_links_box > div::after,
 .footer_information_box > div::after {
   content: "";
+  pointer-events: none;
   position: absolute;
+  height: fit-content;
   width: 30%;
   height: 100%;
   border-top: 2px solid white;

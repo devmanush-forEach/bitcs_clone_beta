@@ -1,4 +1,5 @@
 import React from "react";
+import "./Home.css";
 import FlashButton from "../../common/button/FlashButton";
 import HomeAbout from "../../components/homeAbout/HomeAbout";
 import HomeServices from "../../components/homeServices/HomeServices";
@@ -6,7 +7,6 @@ import HomeUpper from "../../components/home_upper/HomeUpper";
 import newsletter_img from "../../assets/newsletter-img.png";
 import newsletter_bgi from "../../assets/newsletter-shape-one.png";
 import newsletter_boxes from "../../assets/newsletter-shape-two.png";
-import "./Home.css";
 import HomeBusiness from "../../components/homeBusiness/HomeBusiness";
 import Slider from "../../components/slider/Slider";
 import WhatWeOffer from "../../components/whatWeOffer/WhatWeOffer";
