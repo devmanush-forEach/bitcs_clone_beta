@@ -12,6 +12,7 @@
 .top_right {
   position: absolute;
   right: 0%;
+  opacity: 0.5;
   top: 0%;
 }
 
@@ -21,20 +22,23 @@
   left: 0%;
 }
 
-.home_service_section > span {
+.home_service_section>span {
   color: #1dd3f8;
   font-size: 14px;
 }
-.home_service_section > h2 {
+
+.home_service_section>h2 {
   font-size: 40px;
   font-weight: 700;
 }
-.home_service_section > p {
+
+.home_service_section>p {
   font-size: 15px;
   line-height: 25px;
   width: 30%;
   text-align: center;
   color: #4d4d4d;
+  min-width: 560px;
 }
 
 .service_tiles_box {
@@ -43,6 +47,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 30px;
+  min-width: 1100px;
 }
 
 .section_card {
@@ -55,15 +60,17 @@
   background-color: white;
   border-radius: 4px;
 }
+
 .section_card:hover {
   transform: translateY(-5px);
 }
 
-.section_card > div {
+.section_card>div {
   grid-area: img;
   width: 70px;
 }
-.section_card > div > span {
+
+.section_card>div>span {
   font-size: 30px;
   display: grid;
   place-items: center;
@@ -72,14 +79,44 @@
   width: 40px;
   height: 40px;
 }
-.section_card > h2 {
+
+.section_card>h2 {
   grid-area: title;
   font-size: 22px;
   font-weight: 700;
 }
-.section_card > p {
+
+.section_card>p {
   grid-area: desc;
   font-size: 15px;
   line-height: 27px;
   color: #4d4d4d;
+}
+
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1200px) {
+  .service_tiles_box {
+    min-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .service_tiles_box {
+    min-width: 400px;
+    width: 100%;
+    padding: 0px 20px;
+    justify-content: space-around;
+  }
+
+  .section_card {
+    flex-basis: 45%;
+    padding: 25px;
+    display: grid;
+    grid-template-areas: "img title" "img desc" "img desc";
+    transition: all 1s ease;
+    background-color: white;
+    border-radius: 4px;
+  }
 }

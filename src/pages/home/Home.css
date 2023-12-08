@@ -2,57 +2,63 @@
   position: relative;
   width: 100%;
   background-color: #060542;
-  height: 400px;
+  height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  gap: 20px;
+  gap: 1.25rem;
   overflow: hidden;
 }
 
-.home_contact_box > div {
+.home_contact_box>div {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 }
+
 .home_contact_box input {
-  height: 52px;
-  width: 526px;
-  border-radius: 8px;
-  padding-left: 20px;
+  height: 3.25rem;
+  width: 32.875rem;
+  border-radius: .5rem;
+  padding-left: 1.25rem;
 }
 
 .subscribe_btn_div {
   position: absolute;
-  right: 0px;
-  top: 0%;
+  right: 0rem;
+  top: 0rem;
 }
 
-.home_contact_box > div > h2 {
-  font-size: 30px;
+.home_contact_box>div>h2 {
+  font-size: 1.875rem;
 }
 
 .newsletter_bgi_left {
-  height: 260px;
+  height: 16.25rem;
   position: absolute;
-  left: -25px;
-  bottom: -40px;
+  left: -1.5625rem;
+  bottom: -2.5rem;
   opacity: 0.5;
 }
 
 .newsletter_bgi_right {
-  height: 260px;
+  height: 16.25rem;
   position: absolute;
-  right: -25px;
-  bottom: -40px;
+  right: -1.5625rem;
+  bottom: -2.5rem;
   opacity: 0.5;
 }
 
 .newsletter_boxes {
-  height: 260px;
+  height: 16.25rem;
   opacity: 0.5;
   position: absolute;
   top: 0%;
   right: 0%;
 }
+
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1200px) {}

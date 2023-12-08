@@ -1,45 +1,48 @@
 .flash_btn {
-  width: 153px;
-  height: 51px;
+  width: 9.5625rem;
+  height: 3.1875rem;
   border: none;
-  border-radius: 10px;
+  border-radius: .625rem;
   background-color: #1dd3f8;
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   position: relative;
   transition: all 0.5s ease;
   overflow: hidden;
   z-index: 99;
   transition: all 0.5s ease;
 }
+
 .flash_btn::before {
   content: "";
   position: absolute;
-  height: 150px;
-  width: 15px;
+  height: 9.375rem;
+  width: .9375rem;
   background-color: white;
   opacity: 0.5;
-  top: -40px;
-  left: -60px;
+  top: -2.5rem;
+  left: -3.75rem;
   transform: rotate(50deg);
   transition: all 0.5s ease;
 }
+
 .flash_btn::after {
   content: "";
   position: absolute;
-  height: 150px;
-  width: 15px;
+  height: 9.375rem;
+  width: .9375rem;
   background-color: white;
   opacity: 0.5;
-  top: -40px;
-  right: -60px;
+  top: -2.5rem;
+  right: -3.75rem;
   transform: rotate(50deg);
   transition: all 0.5s ease;
 }
 
 .flash_btn:hover::after {
-  transform: translateX(-280px) rotate(50deg);
+  transform: translateX(-17.5rem) rotate(50deg);
 }
+
 .flash_btn:hover::before {
-  transform: translateX(250px) rotate(50deg);
+  transform: translateX(15.625rem) rotate(50deg);
 }

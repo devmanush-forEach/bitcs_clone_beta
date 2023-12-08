@@ -5,11 +5,18 @@
   font-family: sans-serif;
 }
 
-body{
+body {
   max-width: 1920px;
   margin: auto;
 }
 
 button {
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
 }

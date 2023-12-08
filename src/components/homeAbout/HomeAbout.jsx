@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./HomeAbout.css";
 import homeAboutData from "./homeAboutData";
 import homeImage from "../../assets/home_about.png";
@@ -9,8 +9,24 @@ import { BsCheck2Circle } from "react-icons/bs";
 import FlashButton from "../../common/button/FlashButton";
 
 const HomeAbout = ({ isHome }) => {
+  const [tabView, setTabView] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      const width = window.innerWidth;
+      if (width < 1000) {
+        setTabView(true);
+      } else {
+        setTabView(false);
+      }
+    });
+  }, []);
+
   return (
-    <div className="home_about" style={{ paddingTop: isHome ? 250 : 0 }}>
+    <div
+      className="home_about"
+      style={{ paddingTop: isHome ? (tabView ? 550 : 250) : 0 }}
+    >
       {isHome && (
         <div className="cards_container">
           {homeAboutData.cards.map((ele) => (

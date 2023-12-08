@@ -7,15 +7,17 @@
   padding-top: 100px;
 }
 
-.wwo_main_box > p {
+.wwo_main_box>p {
   color: #1dd3f8;
   font-size: 14px;
 }
-.wwo_main_box > h2 {
+
+.wwo_main_box>h2 {
   font-size: 40px;
   font-weight: 700;
 }
-.wwo_main_box > h3 {
+
+.wwo_main_box>h3 {
   font-size: 15px;
   line-height: 27px;
 }
@@ -26,6 +28,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 40px 0px;
+  min-width: 1200px;
 }
 
 .wwo_right_cards_box,
@@ -38,6 +41,7 @@
 .wwo_right_cards_box {
   grid-column: 3/4;
 }
+
 .wwo_card {
   flex-basis: 21%;
   display: grid;
@@ -152,7 +156,7 @@
   width: 100%;
 }
 
-.service_wwo_card > div {
+.service_wwo_card>div {
   color: white;
 }
 
@@ -165,4 +169,35 @@
   width: 100%;
   display: flex;
   align-items: center;
+}
+
+
+@media screen and (max-width: 1500px) {
+  .wwo_card_container {
+    width: 100%;
+    min-width: 1000px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1000px) {
+  .wwo_card_container {
+    width: 100%;
+    min-width: 400px;
+    padding: 0px 20px;
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+
+  .wwo_right_cards_box,
+  .wwo_left_cards_box {
+    padding: 20px;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
 }

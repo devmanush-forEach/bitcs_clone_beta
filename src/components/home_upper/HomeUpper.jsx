@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomeUpper.css";
 import img1 from "../../assets/home_top/img1.png";
+import staticImage from "../../assets/home_top/statichome.png";
 import img2 from "../../assets/home_top/img2.png";
 import img3 from "../../assets/home_top/img3.png";
 import img4 from "../../assets/home_top/img4.png";
