@@ -14,7 +14,7 @@ const HomeAbout = ({ isHome }) => {
   useEffect(() => {
     window.addEventListener("resize", () => {
       const width = window.innerWidth;
-      if (width < 1000) {
+      if (width < 1001) {
         setTabView(true);
       } else {
         setTabView(false);

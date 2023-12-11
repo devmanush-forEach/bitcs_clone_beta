@@ -29,7 +29,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <img src={newsletter_img} alt="" height="200px" />
+          <img src={newsletter_img} alt="" height="200px" width="200px" />
         </div>
         <div>
           <h2>Contact our support team.</h2>

@@ -8,9 +8,55 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
-  padding: 150px 0px;
+  padding: 9.375rem 0rem;
+  min-width: 81.25rem;
 }
 
 .testimonial_card {
   width: 32%;
+}
+
+
+@media screen and (max-width: 1500px) {
+  .users_card_box {
+    width: 100%;
+    padding: 9.375rem 1.25rem;
+    min-width: 75rem;
+    row-gap: 9.375rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .users_card_box {
+    display: flex;
+    padding: 9.375rem 1.25rem;
+    min-width: 59.375rem;
+    row-gap: 6.25rem;
+  }
+
+  .testimonial_card {
+    width: 45%;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .users_card_box {
+    min-width: 45.625rem;
+    row-gap: 6.25rem;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+  .users_card_box {
+    min-width: 21.875rem;
+    row-gap: 0rem;
+    justify-content: center;
+  }
+
+  .testimonial_card {
+    width: 80%;
+    height: 35rem;
+  }
 }

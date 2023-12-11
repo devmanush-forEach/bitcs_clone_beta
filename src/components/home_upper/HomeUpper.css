@@ -179,6 +179,10 @@
   }
 }
 
+.home_static_img {
+  display: none;
+}
+
 @media screen and (max-width: 1500px) {
 
   .home_upper_box {
@@ -361,8 +365,6 @@
 
   }
 
-
-
   .home_upper_text {
     min-width: 90%;
     height: fit-content;
@@ -379,9 +381,12 @@
   }
 
   .home_right_animation {
-    /* min-width: ; */
-    margin-top: 100px;
-    height: 600px;
-    /* margin: auto; */
+    display: none;
+  }
+
+  .home_static_img {
+    display: block;
+    /* border: 1px solid red; */
+
   }
 }

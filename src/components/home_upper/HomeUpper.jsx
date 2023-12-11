@@ -39,6 +39,9 @@ const HomeUpper = () => {
         <img src={img9} alt="" className="shape9" />
         <img src={img8} alt="" className="shape10" />
       </div>
+      <div className="home_static_img">
+        <img src={staticImage} alt="homeStaticImg" height={300} />
+      </div>
     </div>
   );
 };

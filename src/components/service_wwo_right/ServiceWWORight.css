@@ -13,11 +13,13 @@
   justify-content: center;
   gap: 15px;
 }
-.service_wwo_points_box > h2 {
+
+.service_wwo_points_box>h2 {
   font-size: 22px;
   font-weight: 700;
 }
-.service_wwo_points_box > p {
+
+.service_wwo_points_box>p {
   font-size: 15px;
   line-height: 27px;
 }
@@ -30,7 +32,7 @@
   margin-top: 10px;
 }
 
-.service_wwo_list > li {
+.service_wwo_list>li {
   flex-basis: 45%;
   display: flex;
   align-items: center;
@@ -41,7 +43,7 @@
   padding: 15px;
 }
 
-.service_wwo_list > li > span {
+.service_wwo_list>li>span {
   height: 25px;
   width: 25px;
   display: grid;
@@ -57,10 +59,27 @@
   place-items: center;
 }
 
-.service_wwo_image > img:first-child {
+.service_wwo_image>img:first-child {
   width: 80%;
 }
 
-.service_wwo_image > img {
+.service_wwo_image>img {
   width: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .service_wwo_right_card {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap: 1.25rem;
+  }
+
+  .service_wwo_points_box {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+  }
 }

@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
       <p>{wcuData.desc}</p>
       <div className="wcu_card_container">
         {wcuData.cards.map((card, i) => (
-          <div className="wcu_card">
+          <div className={`wcu_card ${i == 2 && "pl-50"} `}>
             <div className="wcu_card_img_box">
               <span
                 style={{
