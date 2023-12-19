@@ -334,3 +334,18 @@
   }
 
 }
+
+@media screen and (max-width: 520px) {
+  .main_footer {
+    grid-template-columns: 1fr;
+  }
+
+
+  .lower_footer {
+    grid-template-columns: 1fr;
+  }
+
+  .lower_footer>div:first-child {
+    grid-column: 1/2;
+  }
+}

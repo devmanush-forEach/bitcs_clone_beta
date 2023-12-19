@@ -5,10 +5,11 @@
   background: transparent;
   display: grid;
   grid-template-columns: 1fr 0.5fr 3.5fr 1fr;
-  position: fixed;
+  position: fixed !important;
   top: 0%;
   transition: all 1s ease;
   z-index: 9999999;
+  position: relative;
 }
 
 .header_logo_box {
@@ -90,7 +91,6 @@
   padding: 1.125rem .625rem;
   transition: all 0.5s ease;
   opacity: 0.4;
-  /* display: none; */
 }
 
 .more_nav:hover .more_dropdown_box {
@@ -131,8 +131,59 @@
   color: #20c997;
 }
 
+.nav_drawer {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  top: 100%;
+  transition: all;
+  transition-duration: 500ms;
+  padding: 1rem;
+  box-shadow: 0px 2px 36px 2px rgba(255, 255, 255, 0.16);
+}
 
-@media screen and (max-width : 62.5rem) {
+.height-fit {
+  height: 12.5rem;
+}
+
+.height-0 {
+  height: 0rem;
+}
+
+.mobile_nav_links_list {
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .3125rem;
+}
+
+.mobile_nav_links {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  padding: .3125rem;
+}
+
+.more_option_box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: .3125rem;
+}
+
+.more_option_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: .3125rem;
+  gap: .3125rem;
+  color: white;
+  margin-left: 1.25rem;
+}
+
+
+@media screen and (max-width : 1000px) {
 
   .header {
     grid-template-columns: 1.25rem 0.5fr 3.5fr 1.25rem;
@@ -149,7 +200,7 @@
 
 }
 
-@media screen and (max-width : 48.0625rem) {
+@media screen and (max-width : 769px) {
 
   .header {
     grid-template-columns: 1.25rem 0.5fr 3.5fr 1.25rem;
@@ -161,6 +212,54 @@
 
   .more_dropdown_box {
     left: -9.375rem;
+  }
+
+
+}
+
+@media screen and (max-width : 650px) {
+
+  .header {
+    grid-template-columns: 1.25rem 1fr 1fr 1.25rem;
+    align-items: center;
+  }
+
+  .nav_burger_icon_box {
+    width: 2.5rem;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+
+  }
+
+  .nav_burger_icon {
+    border: 1px solid white;
+    height: 1px;
+    width: 2.5rem;
+    pointer-events: none;
+    position: relative;
+  }
+
+  .nav_burger_icon::after,
+  .nav_burger_icon::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border: 1px solid white;
+    right: 0%;
+    left: 0%;
+  }
+
+  .nav_burger_icon::after {
+    bottom: .75rem;
+  }
+
+  .nav_burger_icon::before {
+
+    top: .75rem;
   }
 
 

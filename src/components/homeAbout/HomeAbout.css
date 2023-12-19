@@ -1,52 +1,52 @@
 .home_about {
   width: 100%;
   position: relative;
-  padding-top: 250px;
+  padding-top: 15.625rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .cards_container {
   width: 70%;
-  min-width: 1300px;
-  /* height: 200px; */
+  min-width: 81.25rem;
+  /* height: 12.5rem; */
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: absolute;
   /* left: 15%; */
-  top: -70px;
+  top: -4.375rem;
 }
 
 .home_about_card {
   position: relative;
   background-color: white;
-  box-shadow: 0 0 20px 3px rgb(0 0 0/5%);
+  box-shadow: 0 0 1.25rem .1875rem rgb(0 0 0/5%);
   transition: all 0.8s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding: 40px;
+  gap: 1.25rem;
+  padding: 2.5rem;
   z-index: 99;
   text-align: center;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0rem .25rem 1rem, rgba(17, 17, 26, 0.05) 0rem .5rem 2rem;
 }
 
 .home_about_card:first-child {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: .3125rem;
+  border-bottom-left-radius: .3125rem;
 }
 
 .home_about_card:last-child {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: .3125rem;
+  border-bottom-right-radius: .3125rem;
 }
 
 .home_about_card:nth-child(2) {
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
+  border-right: .0625rem solid #eee;
+  border-left: .0625rem solid #eee;
 }
 
 .home_about_card:hover {
@@ -54,13 +54,13 @@
 }
 
 .about_card_img_div {
-  border: 2px dotted #1dd3f8;
-  border-radius: 30px;
-  width: 60px;
-  height: 60px;
+  border: .125rem dotted #1dd3f8;
+  border-radius: 1.875rem;
+  width: 3.75rem;
+  height: 3.75rem;
   display: grid;
   place-items: center;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 100;
   color: #1dd3f8;
   transition: all 0.8s ease;
@@ -68,27 +68,27 @@
 }
 
 .home_about_card>h2 {
-  font-size: 22px;
-  line-height: 25px;
+  font-size: 1.375rem;
+  line-height: 1.5625rem;
 }
 
 .home_about_card>p {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: .9375rem;
+  line-height: 1.5625rem;
   color: gray;
 }
 
 .to_right_arrow {
   border: none;
   position: absolute;
-  bottom: -20px;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
+  bottom: -1.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.25rem;
   transition: all 0.8s ease;
-  box-shadow: 0 0 20px 3px rgb(0 0 0/5%);
+  box-shadow: 0 0 1.25rem .1875rem rgb(0 0 0/5%);
   background-color: white;
-  font-size: 25px;
+  font-size: 1.5625rem;
   display: grid;
   place-items: center;
 }
@@ -101,68 +101,69 @@
 
 .home_about_bottom {
   width: 70%;
-  min-width: 1300px;
+  min-width: 81.25rem;
   height: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .home_about_bottom>img {
   margin: auto;
+  max-width: 100%;
 }
 
 .home_about_bottom>div {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: .9375rem;
 }
 
 .home_about_bottom>div>span {
   color: #1dd3f8;
-  font-size: 14px;
+  font-size: .875rem;
 }
 
 .home_about_bottom>div>h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .home_about_bottom>div>p {
   color: gray;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: .9375rem;
+  line-height: 1.5625rem;
 }
 
 .home_about_list_box>ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  gap: 20px;
-  margin-top: 10px;
+  gap: 1.25rem;
+  margin-top: .625rem;
 }
 
 .home_about_list_box>ul>li {
   flex-basis: 45%;
   display: flex;
   align-items: center;
-  gap: 15px;
-  font-size: 16px;
+  gap: .9375rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .home_about_list_box>ul>li>span {
-  height: 25px;
-  width: 25px;
+  height: 1.5625rem;
+  width: 1.5625rem;
   background-color: #d7eef8;
   display: grid;
   place-items: center;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   color: #1dd3f8;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .home_about_list_box+div {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 @keyframes border_rotation {
@@ -197,48 +198,48 @@
   }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 93.75rem) {
   .cards_container {
-    min-width: 1100px;
-    padding: 20px;
+    min-width: 68.75rem;
+    padding: 1.25rem;
   }
 
   .home_about_bottom {
-    min-width: 1100px;
+    min-width: 68.75rem;
   }
 
   .home_about_card {
-    gap: 10px;
+    gap: .625rem;
   }
 
   .home_about_card>h2 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .home_about_card>p {
-    font-size: 14px;
+    font-size: .875rem;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 75rem) {
   .cards_container {
-    min-width: 900px;
+    min-width: 56.25rem;
   }
 
   .home_about_bottom {
-    min-width: 900px;
+    min-width: 56.25rem;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
 
   .cards_container {
-    min-width: 700px;
+    min-width: 43.75rem;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
     height: fit-content;
   }
 
@@ -248,9 +249,48 @@
 
   .home_about_bottom {
     width: 100%;
-    min-width: 450px;
-    max-width: 600px;
-    padding: 0px 20px;
+    min-width: 28.125rem;
+    max-width: 37.5rem;
+    padding: 0rem 1.25rem;
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .cards_container {
+    width: 100%;
+    min-width: 31.25rem;
+  }
+
+  .home_about_card {
+    max-width: 45%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .cards_container {
+    width: 100%;
+    min-width: 15.625rem;
+  }
+
+  .home_about_card {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .home_about_bottom {
+    min-width: 15.625rem;
+  }
+
+  .home_about_bottom>div>h2 {
+    font-size: 1.25rem;
+  }
+
+  .home_about_list_box>ul>li {
+    flex-basis: 100%;
   }
 }

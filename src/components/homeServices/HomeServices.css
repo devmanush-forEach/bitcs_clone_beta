@@ -1,12 +1,12 @@
 .home_service_section {
-  padding: 100px 0px;
+  padding: 6.25rem 0rem;
   width: 100%;
   background-color: #f2fefe;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .top_right {
@@ -24,21 +24,21 @@
 
 .home_service_section>span {
   color: #1dd3f8;
-  font-size: 14px;
+  font-size: .875rem;
 }
 
 .home_service_section>h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 .home_service_section>p {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: .9375rem;
+  line-height: 1.5625rem;
   width: 30%;
   text-align: center;
   color: #4d4d4d;
-  min-width: 560px;
+  min-width: 35rem;
 }
 
 .service_tiles_box {
@@ -46,77 +46,118 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 30px;
-  min-width: 1100px;
+  row-gap: 1.875rem;
+  min-width: 68.75rem;
 }
 
 .section_card {
-  border: 1px dotted;
+  border: .0625rem dotted;
   flex-basis: 32%;
-  padding: 25px;
+  padding: 1.5625rem;
   display: grid;
   grid-template-areas: "img title" "img desc" "img desc";
   transition: all 1s ease;
   background-color: white;
-  border-radius: 4px;
+  border-radius: .25rem;
 }
 
 .section_card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.3125rem);
 }
 
 .section_card>div {
   grid-area: img;
-  width: 70px;
+  width: 4.375rem;
 }
 
 .section_card>div>span {
-  font-size: 30px;
+  font-size: 1.875rem;
   display: grid;
   place-items: center;
-  border-radius: 4px;
+  border-radius: .25rem;
 
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .section_card>h2 {
   grid-area: title;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
 }
 
 .section_card>p {
   grid-area: desc;
-  font-size: 15px;
-  line-height: 27px;
+  font-size: .9375rem;
+  line-height: 1.6875rem;
   color: #4d4d4d;
 }
 
 
-@media screen and (max-width: 1500px) {}
+@media screen and (max-width: 93.75rem) {}
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 75rem) {
   .service_tiles_box {
-    min-width: 1000px;
+    min-width: 62.5rem;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
   .service_tiles_box {
-    min-width: 400px;
+    min-width: 25rem;
     width: 100%;
-    padding: 0px 20px;
+    padding: 0rem 1.25rem;
     justify-content: space-around;
   }
 
   .section_card {
     flex-basis: 45%;
-    padding: 25px;
+    padding: 1.5625rem;
     display: grid;
     grid-template-areas: "img title" "img desc" "img desc";
     transition: all 1s ease;
     background-color: white;
-    border-radius: 4px;
+    border-radius: .25rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .service_tiles_box {
+    min-width: 25rem;
+    width: 100%;
+    padding: 0rem 1.25rem;
+    justify-content: space-around;
+  }
+
+  .section_card {
+    flex-basis: 45%;
+    padding: 1.5625rem;
+    display: grid;
+    grid-template-areas: "img title" "img desc" "img desc";
+    transition: all 1s ease;
+    background-color: white;
+    border-radius: .25rem;
+  }
+
+  .home_service_section>h2 {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .home_service_section>p {
+    width: 100%;
+    padding: 0rem 1.25rem;
+    min-width: 15.625rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .service_tiles_box {
+    min-width: 18.75rem;
+  }
+
+  .section_card {
+    flex-basis: 100%;
+    padding: 1rem;
   }
 }

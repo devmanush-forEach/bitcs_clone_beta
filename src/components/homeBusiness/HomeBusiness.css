@@ -155,3 +155,26 @@
     min-width: 550px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .business_section>div {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+  }
+
+  .bsns_right_card:first-child {
+    bottom: 0px;
+  }
+
+  .bsns_right_card:nth-child(3) {
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .bsns_right_card {
+    width: 100%;
+  }
+}
